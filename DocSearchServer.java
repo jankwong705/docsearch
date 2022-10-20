@@ -45,8 +45,6 @@ class Handler implements URLHandler {
             List<File> fileSearch = FileHelpers.getFiles(new Path(parameters));
             return fileSearch.toString();
         }
-
-
       return "Don't know how to handle that path!";
     }
 }
