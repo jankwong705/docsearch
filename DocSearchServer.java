@@ -42,7 +42,8 @@ class Handler implements URLHandler {
         }
         else if(url.getPath().equals("/search")) {
             String[] parameters = url.getQuery().split("=");
-            
+            List<File> fileSearch = FileHelpers.getFiles(new Path(parameters));
+            return fileSearch.toString();
         }
 
 
